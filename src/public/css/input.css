@@ -14,6 +14,14 @@
   text-align: center;
 }
 
+.wrapper {
+  display: none;
+}
+
+.wrapper.active {
+  display: block;
+}
+
 .image-container img {
   height: 500px;
   max-width: 100%;

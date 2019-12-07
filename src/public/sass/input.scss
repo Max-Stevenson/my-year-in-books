@@ -11,7 +11,15 @@
 
 .image-container {
   background: lightblue;
-  text-align: center
+  text-align: center;
+}
+
+.wrapper {
+  display: none;
+}
+
+.wrapper.active {
+  display: block;
 }
 
 .image-container img {
