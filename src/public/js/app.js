@@ -12,9 +12,9 @@ $leftButton.click(() => {
 });
 
 const changeContent = (index) => {
-  console.log(index);
-  
+  console.log('b' + contentIndex);
   contentIndex += index;
+  console.log('a' + contentIndex);
 
   if (contentIndex > 12) {
     contentIndex = 0;

@@ -1,5 +1,6 @@
 .slideshow-container {
-  width: 50%;
+  position: relative;
+  max-width: 50%;
   margin: 0 auto;
   background: lightpink;
 }
@@ -15,10 +16,29 @@
 }
 
 .image-container img {
-  height: 500px; 
-  max-width: 100%; 
+  height: auto; 
+  width: 100%; 
 }
 
 .review-container {
   background: lightcoral;
+}
+
+.selection-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+#right-button {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
