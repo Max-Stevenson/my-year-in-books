@@ -1,4 +1,3 @@
-let contentIndex = 0;
 const $bookReviews = $('.wrapper');
 const $rightButton = $('#right-button');
 const $leftButton = $('#left-button');
@@ -12,21 +11,16 @@ $leftButton.click(() => {
 });
 
 const changeContent = (index) => {
-  console.log('b' + contentIndex);
-  contentIndex += index;
-  console.log('a' + contentIndex);
-
-  if (contentIndex > 12) {
-    contentIndex = 0;
-  } else if (contentIndex < 0) {
-    contentIndex = 12;
+  let $selector = $('.active');
+  let $currentReviewIndex = $bookReviews.index($selector);
+  $($bookReviews[$currentReviewIndex]).removeClass('active');
+  $currentReviewIndex += index;
+  
+  if ($currentReviewIndex > $bookReviews.length-1) {
+    $currentReviewIndex = 0;
+  } else if ($currentReviewIndex < 0) {
+    $currentReviewIndex = $bookReviews.length-1;
   };
 
-  for (let i = 0; i < $bookReviews.length; i++) {
-    $bookReviews[i].style.display = "none";
-  };
-
-  $bookReviews[contentIndex].style.display = "block";
+  $($bookReviews[$currentReviewIndex]).addClass('active');
 };
-
-changeContent(0);
