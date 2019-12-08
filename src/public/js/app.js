@@ -24,3 +24,17 @@ const changeContent = (index) => {
 
   $($bookReviews[$currentReviewIndex]).addClass('active');
 };
+
+const $MonthNavLink = $('.month-link');
+
+$MonthNavLink.click((event) => {
+  const month = event.target.text.trim();
+  let $monthSelector = $(`h1:contains(${month})`)[0].parentElement.parentElement;
+  let $newMonthIndex = $bookReviews.index($monthSelector);
+
+  let $selector = $('.active');
+  let $currentReviewIndex = $bookReviews.index($selector);
+  $($bookReviews[$currentReviewIndex]).removeClass('active');
+
+  $($bookReviews[$newMonthIndex]).addClass('active');
+});
