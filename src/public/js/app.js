@@ -43,6 +43,7 @@ $(document).keydown(function (e) {
   switch (e.which) {
     case 37:
       changeContent(-1);
+      console.log('left');
       break;
 
     case 39:
