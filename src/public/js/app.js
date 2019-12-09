@@ -62,3 +62,15 @@ $aboutLink.click((event) => {
   const $aboutContent = $('#about-content');
   $aboutContent.toggleClass('active');
 });
+
+$.get('templates/review.htm', (templates) => {
+  const templateData = {
+    month: "January",
+    image: "/public/images/sapiens.jpg",
+    altText: "Sapiens: A Brief History of Humankind, book by Yuval Noah Harari",
+    review: "testing"
+  };
+
+  var template = $(templates).filter('#tpl-review').html();
+  $('body').append(Mustache.render(template, templateData));
+});
