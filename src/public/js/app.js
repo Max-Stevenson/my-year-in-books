@@ -15,11 +15,11 @@ const changeContent = (index) => {
   let $currentReviewIndex = $bookReviews.index($selector);
   $($bookReviews[$currentReviewIndex]).removeClass('active');
   $currentReviewIndex += index;
-  
-  if ($currentReviewIndex > $bookReviews.length-1) {
+
+  if ($currentReviewIndex > $bookReviews.length - 1) {
     $currentReviewIndex = 0;
   } else if ($currentReviewIndex < 0) {
-    $currentReviewIndex = $bookReviews.length-1;
+    $currentReviewIndex = $bookReviews.length - 1;
   };
 
   $($bookReviews[$currentReviewIndex]).addClass('active');
@@ -37,4 +37,19 @@ $MonthNavLink.click((event) => {
   $($bookReviews[$currentReviewIndex]).removeClass('active');
 
   $($bookReviews[$newMonthIndex]).addClass('active');
+});
+
+$(document).keydown(function (e) {
+  switch (e.which) {
+    case 37:
+      changeContent(-1);
+      break;
+
+    case 39:
+    changeContent(1);
+      break;
+
+    default: return;
+  }
+  e.preventDefault();
 });
