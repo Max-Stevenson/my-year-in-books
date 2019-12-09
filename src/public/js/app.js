@@ -53,3 +53,12 @@ $(document).keydown(function (e) {
   }
   e.preventDefault();
 });
+
+$aboutLink = $('#about-link');
+$aboutLink.click((event) => {
+  const $slideshowContainer = $('.slideshow-container');
+  $slideshowContainer.toggleClass('hidden');
+
+  const $aboutContent = $('#about-content');
+  $aboutContent.toggleClass('active');
+});

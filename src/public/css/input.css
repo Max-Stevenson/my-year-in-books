@@ -98,5 +98,20 @@
     width: calc(100% - 17rem);
   }
 }
+#about-content {
+  display: none;
+}
+
+#about-content.active {
+  display: block;
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  background: lightseagreen;
+}
+
+.slideshow-container.hidden {
+  display: none;
+}
 
 /*# sourceMappingURL=input.css.map */
