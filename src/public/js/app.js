@@ -47,7 +47,7 @@ $(document).keydown(function (e) {
       break;
 
     case 39:
-    changeContent(1);
+      changeContent(1);
       break;
 
     default: return;
@@ -64,14 +64,14 @@ $aboutLink.click((event) => {
   $aboutContent.toggleClass('active');
 });
 
-$.get('templates/review.htm', (templates) => {
-  const templateData = {
-    month: "January",
-    image: "/public/images/sapiens.jpg",
-    altText: "Sapiens: A Brief History of Humankind, book by Yuval Noah Harari",
-    review: "testing"
-  };
+const data = fetch('reviews/sapiens.json').then(response => response.json());
+Promise.all([data])
+  .then(response => {
+    console.log(response);
 
-  var template = $(templates).filter('#tpl-review').html();
-  $('body').append(Mustache.render(template, templateData));
-});
+    $.get('templates/review.htm', (templates) => {
+      var template = $(templates).filter('#tpl-greeting').html();
+      $('#target').append(Mustache.render(template, response[0]));
+  });
+
+  }).catch(error => console.log('Unable to get all template data: ', error.message));
