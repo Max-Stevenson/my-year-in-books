@@ -1,28 +1,24 @@
-const $rightButton = $('#right-button');
-const $leftButton = $('#left-button');
+let globalIndex = 0;
 
-$rightButton.click(() => {
-  changeContent(1);
-});
 
-$leftButton.click(() => {
-  changeContent(-1);
-});
 
 const changeContent = (index) => {
-  console.log('test');
-  let $selector = $('.active');
-  let $currentReviewIndex = $bookReviews.index($selector);
-  $($bookReviews[$currentReviewIndex]).removeClass('active');
-  $currentReviewIndex += index;
+  globalIndex += index;
+  $.getJSON('reviews/reviews.json', (data) => {
+    $.get('templates/review.htm', (templates) => {
+      var template = $(templates).filter('#tpl-greeting').html();
+      $('#target').html(Mustache.render(template, data[globalIndex]));
 
-  if ($currentReviewIndex > $bookReviews.length - 1) {
-    $currentReviewIndex = 0;
-  } else if ($currentReviewIndex < 0) {
-    $currentReviewIndex = $bookReviews.length - 1;
-  };
-
-  $($bookReviews[$currentReviewIndex]).addClass('active');
+      const $rightButton = $('#right-button');
+      const $leftButton = $('#left-button');
+      $rightButton.click(() => {
+        changeContent(1);
+      });
+      $leftButton.click(() => {
+        changeContent(-1);
+      });
+    });
+  });
 };
 
 const $MonthNavLink = $('.month-link');
@@ -43,7 +39,6 @@ $(document).keydown(function (e) {
   switch (e.which) {
     case 37:
       changeContent(-1);
-      console.log('left');
       break;
 
     case 39:
@@ -64,9 +59,4 @@ $aboutLink.click((event) => {
   $aboutContent.toggleClass('active');
 });
 
-$.getJSON('reviews/reviews.json', (data) => {
-  $.get('templates/review.htm', (templates) => {
-    var template = $(templates).filter('#tpl-greeting').html();
-    $('#target').append(Mustache.render(template, data[0]));
-  });
-});
+changeContent(0);
