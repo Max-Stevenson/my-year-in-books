@@ -2,45 +2,49 @@ $(document).ready(function () {
   $.getJSON('/reviews/reviews.json', (data) => {
     $.get('/templates/review.htm', (templates) => {
 
-      renderReview(data, templates)
-      
+      renderReview(data, templates);
+      $(document).on('click', '#right-button', () => {
+        changeContent(data, templates, 1);
+      });
+
+      $(document).on('click', '#left-button', () => {
+        changeContent(data, templates, -1);
+      });
+
+      $(document).keydown(function (e) {
+        switch (e.which) {
+          case 37:
+            changeContent(data, templates, -1);
+            break;
+
+          case 39:
+            changeContent(data, templates, 1);
+            break;
+
+          default: return;
+        }
+        e.preventDefault();
+      });
     });
   });
 });
 
-const renderReview = (data, templates) => {
+const renderReview = (data, templates, index = 0) => {
   let template = $(templates).filter('#tpl-greeting').html();
-  $('#target').html(Mustache.render(template, data[0]));
+  $('#target').html(Mustache.render(template, data[index]));
 };
 
-const changeContent = (index) => {
-  $.getJSON('src/reviews/reviews.json', (data) => {
-    $.get('src/templates/review.htm', (templates) => {
-      console.log(data);
+const changeContent = (data, templates, index) => {
+  let currentIndex = getCurrentIndex(data, $('.month-heading').text());
+  let newIndex = currentIndex + index;
 
+  if (newIndex > data.length - 1) {
+    newIndex = 0;
+  } else if (newIndex < 0) {
+    newIndex = data.length - 1;
+  };
 
-      let currentIndex = getCurrentIndex(data, $('.month-heading').text());
-      let newIndex = currentIndex + index;
-
-      if (newIndex > data.length - 1) {
-        newIndex = 0;
-      } else if (newIndex < 0) {
-        newIndex = data.length - 1;
-      };
-
-      var template = $(templates).filter('#tpl-greeting').html();
-      $('#target').html(Mustache.render(template, data[newIndex]));
-
-      const $rightButton = $('#right-button');
-      const $leftButton = $('#left-button');
-      $rightButton.click(() => {
-        changeContent(1);
-      });
-      $leftButton.click(() => {
-        changeContent(-1);
-      });
-    });
-  });
+  renderReview(data, templates, newIndex);
 };
 
 const getCurrentIndex = (data, month) => {
@@ -56,20 +60,7 @@ $MonthNavLink.click((event) => {
   changeContent()
 });
 
-$(document).keydown(function (e) {
-  switch (e.which) {
-    case 37:
-      changeContent(-1);
-      break;
 
-    case 39:
-      changeContent(1);
-      break;
-
-    default: return;
-  }
-  e.preventDefault();
-});
 
 // $aboutLink = $('#about-link');
 // $aboutLink.click((event) => {
