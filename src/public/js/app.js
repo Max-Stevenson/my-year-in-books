@@ -3,12 +3,8 @@ const changeContent = (index) => {
   $.getJSON('reviews/reviews.json', (data) => {
     $.get('templates/review.htm', (templates) => {
             
-      let currentIndex = data.findIndex((element) => {        
-        return element.month.trim() === $('.month-heading').text();
-      });
-      
+      let currentIndex = getCurrentIndex(data, $('.month-heading').text());
       let newIndex = currentIndex + index;
-      console.log(newIndex);
       
       if (newIndex > data.length-1) {
         newIndex = 0;
@@ -31,18 +27,17 @@ const changeContent = (index) => {
   });
 };
 
+const getCurrentIndex = (data, month) => {
+  let index = currentIndex = data.findIndex((element) => {        
+    return element.month.trim() === month;
+  });
+  return index < 0 ? index = 0 : index;
+};
+
 const $MonthNavLink = $('.month-link');
-
 $MonthNavLink.click((event) => {
-  // const month = event.target.text.trim();
-  // let $monthSelector = $(`h1:contains(${month})`)[0].parentElement.parentElement;
-  // let $newMonthIndex = $bookReviews.index($monthSelector);
-
-  // let $selector = $('.active');
-  // let $currentReviewIndex = $bookReviews.index($selector);
-  // $($bookReviews[$currentReviewIndex]).removeClass('active');
-
-  // $($bookReviews[$newMonthIndex]).addClass('active');
+  const month = event.target.text.trim();
+  changeContent()
 });
 
 $(document).keydown(function (e) {
