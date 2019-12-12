@@ -1,15 +1,29 @@
+$(document).ready(function () {
+  $.getJSON('/reviews/reviews.json', (data) => {
+    console.log(data);
+  })
+    .done(function () {
+      console.log("second success");
+    })
+    .fail(function (jqxhr, textStatus, error) {
+      var err = textStatus + ", " + error;
+      console.log("Request Failed: " + err);
+    });
+});
 
 const changeContent = (index) => {
-  $.getJSON('reviews/reviews.json', (data) => {
-    $.get('templates/review.htm', (templates) => {
-            
+  $.getJSON('src/reviews/reviews.json', (data) => {
+    $.get('src/templates/review.htm', (templates) => {
+      console.log(data);
+
+
       let currentIndex = getCurrentIndex(data, $('.month-heading').text());
       let newIndex = currentIndex + index;
-      
-      if (newIndex > data.length-1) {
+
+      if (newIndex > data.length - 1) {
         newIndex = 0;
-      } else if (newIndex < 0) {        
-        newIndex = data.length-1;
+      } else if (newIndex < 0) {
+        newIndex = data.length - 1;
       };
 
       var template = $(templates).filter('#tpl-greeting').html();
@@ -28,7 +42,7 @@ const changeContent = (index) => {
 };
 
 const getCurrentIndex = (data, month) => {
-  let index = currentIndex = data.findIndex((element) => {        
+  let index = currentIndex = data.findIndex((element) => {
     return element.month.trim() === month;
   });
   return index < 0 ? index = 0 : index;
@@ -55,13 +69,13 @@ $(document).keydown(function (e) {
   e.preventDefault();
 });
 
-$aboutLink = $('#about-link');
-$aboutLink.click((event) => {
-  const $slideshowContainer = $('.slideshow-container');
-  $slideshowContainer.toggleClass('hidden');
+// $aboutLink = $('#about-link');
+// $aboutLink.click((event) => {
+//   console.log('clicked');
 
-  const $aboutContent = $('#about-content');
-  $aboutContent.toggleClass('active');
-});
+//   // const $slideshowContainer = $('.slideshow-container');
+//   // $slideshowContainer.toggleClass('hidden');
 
-changeContent(0);
+//   // const $aboutContent = $('#about-content');
+//   // $aboutContent.toggleClass('active');
+// })
