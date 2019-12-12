@@ -1,4 +1,3 @@
-const $bookReviews = $('.wrapper');
 const $rightButton = $('#right-button');
 const $leftButton = $('#left-button');
 
@@ -11,6 +10,7 @@ $leftButton.click(() => {
 });
 
 const changeContent = (index) => {
+  console.log('test');
   let $selector = $('.active');
   let $currentReviewIndex = $bookReviews.index($selector);
   $($bookReviews[$currentReviewIndex]).removeClass('active');
