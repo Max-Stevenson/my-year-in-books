@@ -1,13 +1,23 @@
-let globalIndex = 0;
-
-
 
 const changeContent = (index) => {
-  globalIndex += index;
   $.getJSON('reviews/reviews.json', (data) => {
     $.get('templates/review.htm', (templates) => {
+            
+      let currentIndex = data.findIndex((element) => {        
+        return element.month.trim() === $('.month-heading').text();
+      });
+      
+      let newIndex = currentIndex + index;
+      console.log(newIndex);
+      
+      if (newIndex > data.length-1) {
+        newIndex = 0;
+      } else if (newIndex < 0) {        
+        newIndex = data.length-1;
+      };
+
       var template = $(templates).filter('#tpl-greeting').html();
-      $('#target').html(Mustache.render(template, data[globalIndex]));
+      $('#target').html(Mustache.render(template, data[newIndex]));
 
       const $rightButton = $('#right-button');
       const $leftButton = $('#left-button');
@@ -24,15 +34,15 @@ const changeContent = (index) => {
 const $MonthNavLink = $('.month-link');
 
 $MonthNavLink.click((event) => {
-  const month = event.target.text.trim();
-  let $monthSelector = $(`h1:contains(${month})`)[0].parentElement.parentElement;
-  let $newMonthIndex = $bookReviews.index($monthSelector);
+  // const month = event.target.text.trim();
+  // let $monthSelector = $(`h1:contains(${month})`)[0].parentElement.parentElement;
+  // let $newMonthIndex = $bookReviews.index($monthSelector);
 
-  let $selector = $('.active');
-  let $currentReviewIndex = $bookReviews.index($selector);
-  $($bookReviews[$currentReviewIndex]).removeClass('active');
+  // let $selector = $('.active');
+  // let $currentReviewIndex = $bookReviews.index($selector);
+  // $($bookReviews[$currentReviewIndex]).removeClass('active');
 
-  $($bookReviews[$newMonthIndex]).addClass('active');
+  // $($bookReviews[$newMonthIndex]).addClass('active');
 });
 
 $(document).keydown(function (e) {
