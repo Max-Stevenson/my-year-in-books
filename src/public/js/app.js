@@ -64,14 +64,9 @@ $aboutLink.click((event) => {
   $aboutContent.toggleClass('active');
 });
 
-const data = fetch('reviews/sapiens.json').then(response => response.json());
-Promise.all([data])
-  .then(response => {
-    console.log(response);
-
-    $.get('templates/review.htm', (templates) => {
-      var template = $(templates).filter('#tpl-greeting').html();
-      $('#target').append(Mustache.render(template, response[0]));
+$.getJSON('reviews/reviews.json', (data) => {
+  $.get('templates/review.htm', (templates) => {
+    var template = $(templates).filter('#tpl-greeting').html();
+    $('#target').append(Mustache.render(template, data[0]));
   });
-
-  }).catch(error => console.log('Unable to get all template data: ', error.message));
+});
