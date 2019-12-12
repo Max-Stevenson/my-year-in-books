@@ -1,15 +1,17 @@
 $(document).ready(function () {
   $.getJSON('/reviews/reviews.json', (data) => {
-    console.log(data);
-  })
-    .done(function () {
-      console.log("second success");
-    })
-    .fail(function (jqxhr, textStatus, error) {
-      var err = textStatus + ", " + error;
-      console.log("Request Failed: " + err);
+    $.get('/templates/review.htm', (templates) => {
+
+      renderReview(data, templates)
+      
     });
+  });
 });
+
+const renderReview = (data, templates) => {
+  let template = $(templates).filter('#tpl-greeting').html();
+  $('#target').html(Mustache.render(template, data[0]));
+};
 
 const changeContent = (index) => {
   $.getJSON('src/reviews/reviews.json', (data) => {
