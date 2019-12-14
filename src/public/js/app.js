@@ -25,6 +25,20 @@ $(document).ready(function () {
         }
         e.preventDefault();
       });
+
+      const $MonthNavLink = $('.month-link');
+      $MonthNavLink.click((event) => {
+        event.preventDefault();
+        const month = event.target.text.trim();
+        let index = getCurrentIndex(data, month);
+        renderReview(data, templates, index);
+      });
+
+      $homeLink = $('#home-link');
+      $homeLink.click((event) => {
+        event.preventDefault();
+        renderReview(data, templates, 0)
+      });
     });
   });
 });
@@ -54,21 +68,14 @@ const getCurrentIndex = (data, month) => {
   return index < 0 ? index = 0 : index;
 };
 
-const $MonthNavLink = $('.month-link');
-$MonthNavLink.click((event) => {
-  const month = event.target.text.trim();
-  changeContent()
+$aboutLink = $('#about-link');
+$aboutLink.click((event) => {
+  event.preventDefault();
+
+  const $slideshowContainer = $('.slideshow-container');
+  $slideshowContainer.toggleClass('hidden');
+
+  const $aboutContent = $('#about-content');
+  $aboutContent.toggleClass('active');
 });
 
-
-
-// $aboutLink = $('#about-link');
-// $aboutLink.click((event) => {
-//   console.log('clicked');
-
-//   // const $slideshowContainer = $('.slideshow-container');
-//   // $slideshowContainer.toggleClass('hidden');
-
-//   // const $aboutContent = $('#about-content');
-//   // $aboutContent.toggleClass('active');
-// })
