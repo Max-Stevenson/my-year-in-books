@@ -79,3 +79,8 @@ $aboutLink.click((event) => {
   $aboutContent.toggleClass('active');
 });
 
+// wait until page is loaded.
+// get json
+// get all image srcs in getjson result
+// 
+

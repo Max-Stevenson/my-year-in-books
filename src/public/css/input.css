@@ -10,9 +10,11 @@
   background: lightgreen;
 }
 
-.image-container {
+.image-wrapper {
   background: lightblue;
   text-align: center;
+  min-height: 960px;
+  transition: height 0.66s ease-out;
 }
 
 .image-container img {
