@@ -3,6 +3,13 @@ $(document).ready(function () {
     $.get('/templates/review.htm', (templates) => {
 
       renderReview(data, templates);
+
+      $(window).on('hashchange', (event) => {        
+        let month = location.hash.substring(2);
+        let targetIndex = getCurrentIndex(data, month);
+        renderReview(data, templates, targetIndex);
+      });
+
       $(document).on('click', '#right-button', () => {
         changeContent(data, templates, 1);
       });
@@ -26,13 +33,13 @@ $(document).ready(function () {
         e.preventDefault();
       });
 
-      const $MonthNavLink = $('.month-link');
-      $MonthNavLink.click((event) => {
-        event.preventDefault();
-        const month = event.target.text.trim();
-        let index = getCurrentIndex(data, month);
-        renderReview(data, templates, index);
-      });
+      // const $MonthNavLink = $('.month-link');
+      // $MonthNavLink.click((event) => {
+      //   // event.preventDefault();
+      //   const month = event.target.text.trim();
+      //   let index = getCurrentIndex(data, month);
+      //   renderReview(data, templates, index);
+      // });
 
       $homeLink = $('#home-link');
       $homeLink.click((event) => {
@@ -62,8 +69,8 @@ const changeContent = (data, templates, index) => {
 };
 
 const getCurrentIndex = (data, month) => {
-  let index = currentIndex = data.findIndex((element) => {
-    return element.month.trim() === month;
+  let index = data.findIndex((element) => {
+    return element.month.trim().toLowerCase() === month.trim().toLowerCase();
   });
   return index < 0 ? index = 0 : index;
 };
@@ -79,8 +86,4 @@ $aboutLink.click((event) => {
   $aboutContent.toggleClass('active');
 });
 
-// wait until page is loaded.
-// get json
-// get all image srcs in getjson result
-// 
 
