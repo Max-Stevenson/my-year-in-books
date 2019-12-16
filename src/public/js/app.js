@@ -4,10 +4,14 @@ $(document).ready(function () {
 
       renderReview(data, templates);
 
-      $(window).on('hashchange', (event) => {        
+      $(window).on('hashchange', (event) => {
         let month = location.hash.substring(2);
         let targetIndex = getCurrentIndex(data, month);
         renderReview(data, templates, targetIndex);
+      });
+
+      $(window).on('popstate', (e) => {
+        console.log(e); 
       });
 
       $(document).on('click', '#right-button', () => {
@@ -41,11 +45,11 @@ $(document).ready(function () {
       //   renderReview(data, templates, index);
       // });
 
-      $homeLink = $('#home-link');
-      $homeLink.click((event) => {
-        event.preventDefault();
-        renderReview(data, templates, 0)
-      });
+      // $homeLink = $('#home-link');
+      // $homeLink.click((event) => {
+      //   event.preventDefault();
+      //   renderReview(data, templates, 0)
+      // });
     });
   });
 });
@@ -53,10 +57,13 @@ $(document).ready(function () {
 const renderReview = (data, templates, index = 0) => {
   let template = $(templates).filter('#tpl-greeting').html();
   $('#target').html(Mustache.render(template, data[index]));
+  let month = data[index].month.toLowerCase();
+  history.pushState({ id: month }, 'My Year In Books', `http://localhost:3000/#/${month}`);
 };
 
 const changeContent = (data, templates, index) => {
-  let currentIndex = getCurrentIndex(data, $('.month-heading').text());
+  let month = $('.month-heading').text().toLowerCase();
+  let currentIndex = getCurrentIndex(data, month);
   let newIndex = currentIndex + index;
 
   if (newIndex > data.length - 1) {
