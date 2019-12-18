@@ -48,7 +48,6 @@ $(document).ready(function () {
 });
 
 const renderReview = (data, templates, index = 0) => {
-  let month = data[index].month.toLowerCase();
   let template = $(templates).filter('#tpl-greeting').html();
   $('#target').html(Mustache.render(template, data[index]));
 };
@@ -64,8 +63,9 @@ const changeContent = (data, templates, index) => {
     newIndex = data.length - 1;
   };
 
-  history.pushState(month, null, `http://localhost:3000/#/${month}`);
   renderReview(data, templates, newIndex);
+  month = $('.month-heading').text().toLowerCase();
+  history.pushState(month, null, `http://localhost:3000/#/${month}`);
 };
 
 const getCurrentIndex = (data, month) => {
