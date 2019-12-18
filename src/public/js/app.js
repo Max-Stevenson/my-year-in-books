@@ -2,17 +2,24 @@ $(document).ready(function () {
   $.getJSON('/reviews/reviews.json', (data) => {
     $.get('/templates/review.htm', (templates) => {
 
-      renderReview(data, templates);
+      window.onload = () => {
+        let month = location.hash.substring(2);
+        let index = getCurrentIndex(data, month);
+        renderReview(data, templates, index);
+      };
 
-      $(window).on('hashchange', (event) => {
+      window.onhashchange = () => {
         let month = location.hash.substring(2);
         let targetIndex = getCurrentIndex(data, month);
         renderReview(data, templates, targetIndex);
-      });
+      };
 
-      $(window).on('popstate', (e) => {
-        console.log(e); 
-      });
+      window.onpopstate = (event) => {
+        if (event.state != null) {
+          let index = getCurrentIndex(data, event.state);
+          renderReview(data, templates, index);
+        };
+      };
 
       $(document).on('click', '#right-button', () => {
         changeContent(data, templates, 1);
@@ -36,29 +43,14 @@ $(document).ready(function () {
         }
         e.preventDefault();
       });
-
-      // const $MonthNavLink = $('.month-link');
-      // $MonthNavLink.click((event) => {
-      //   // event.preventDefault();
-      //   const month = event.target.text.trim();
-      //   let index = getCurrentIndex(data, month);
-      //   renderReview(data, templates, index);
-      // });
-
-      // $homeLink = $('#home-link');
-      // $homeLink.click((event) => {
-      //   event.preventDefault();
-      //   renderReview(data, templates, 0)
-      // });
     });
   });
 });
 
 const renderReview = (data, templates, index = 0) => {
+  let month = data[index].month.toLowerCase();
   let template = $(templates).filter('#tpl-greeting').html();
   $('#target').html(Mustache.render(template, data[index]));
-  let month = data[index].month.toLowerCase();
-  history.pushState({ id: month }, 'My Year In Books', `http://localhost:3000/#/${month}`);
 };
 
 const changeContent = (data, templates, index) => {
@@ -72,6 +64,7 @@ const changeContent = (data, templates, index) => {
     newIndex = data.length - 1;
   };
 
+  history.pushState(month, null, `http://localhost:3000/#/${month}`);
   renderReview(data, templates, newIndex);
 };
 
@@ -92,5 +85,3 @@ $aboutLink.click((event) => {
   const $aboutContent = $('#about-content');
   $aboutContent.toggleClass('active');
 });
-
-
