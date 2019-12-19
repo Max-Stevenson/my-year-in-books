@@ -115,6 +115,8 @@
 //   display: none;
 // }
 
+$gunmetalGray: #2A3439;
+
 body {
   margin: 0;
 }
@@ -126,7 +128,10 @@ body {
 
 .sidebar {
   flex: 20%;
-  background: green;
+  background: #dadbda;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #target {
@@ -148,9 +153,10 @@ body {
 
 .profile-pic-container {
   flex: 50%;
-  border-bottom: 1px solid #3a3f48;
-  border-top: 1px solid #3a3f48;
+  border-bottom: 1px solid $gunmetalGray;
+  border-top: 1px solid $gunmetalGray;
   color: #818896;
+  padding: 20px 0;
 }
 
 .profile-body {
@@ -166,4 +172,44 @@ body {
 
 .profile-name {
   font-weight: bolder;
+  text-align: center;
+}
+
+.profile-title {
+  text-align: center;
+}
+
+.content-container {
+  border-bottom: 1px solid #3a3f48;
+}
+
+.content-heading {
+  padding-left: 10px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.slideshow-container {
+  display: flex;
+}
+
+#left-button-container {
+  // top: 100%;
+  // position: absolute;
+  // width: 50px;
+  // height: 50px;
+}
+
+.selection-button {
+  height: 100%;
+  width: 100%;
+}
+
+#right-button-container {
+  order: 3;
+}
+
+.wrapper {
 }
