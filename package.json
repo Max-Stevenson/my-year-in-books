@@ -13,7 +13,7 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "start": "nodemon src/server/server.js"
+    "start": "nodemon src/server/server.js & sass --watch src/public/sass:src/public/css"
   },
   "repository": {
     "type": "git",
