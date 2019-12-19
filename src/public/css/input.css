@@ -17,7 +17,6 @@ body {
 
 #target {
   flex: 80%;
-  background: lightblue;
 }
 
 .header {
@@ -76,6 +75,10 @@ body {
   display: flex;
 }
 
+#left-button-container, #right-button-container {
+  width: 50px;
+}
+
 .selection-button {
   height: 100%;
   width: 100%;
@@ -83,6 +86,23 @@ body {
 
 #right-button-container {
   order: 3;
+}
+
+.review-text {
+  margin: 10px 10px;
+}
+
+.image-wrapper {
+  background: lightblue;
+  text-align: center;
+  border: 1px solid #2A3439;
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=input.css.map */
