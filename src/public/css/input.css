@@ -123,4 +123,28 @@ body {
   max-width: 75%;
 }
 
+i {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .header {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .header i {
+    display: inline !important;
+    text-align: left;
+  }
+
+  .header h1 {
+    display: inline;
+  }
+}
+
 /*# sourceMappingURL=input.css.map */
