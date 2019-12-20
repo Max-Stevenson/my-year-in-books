@@ -85,3 +85,7 @@ $aboutLink.click((event) => {
   const $aboutContent = $('#about-content');
   $aboutContent.toggleClass('active');
 });
+
+$('#sidebar-mobile-control').on('click', () => {
+  $('.sidebar').css('display', 'block');
+});
