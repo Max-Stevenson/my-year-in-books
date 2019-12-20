@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Playfair Display", serif;
 }
 
 .flex-container {
@@ -20,7 +21,8 @@ body {
 }
 
 .header {
-  background: lightcoral;
+  background: #f1f1f1;
+  padding: 20px;
 }
 
 .header h1 {
@@ -92,17 +94,30 @@ body {
   margin: 10px 10px;
 }
 
+.image-container {
+  max-width: 779px;
+  margin: 0 auto;
+}
+
 .image-wrapper {
   background: lightblue;
   text-align: center;
   border: 1px solid #2A3439;
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 760px;
+  padding: 0 0 130%;
+  position: relative;
 }
 
 .image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=input.css.map */
