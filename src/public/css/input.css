@@ -75,23 +75,22 @@ body {
 
 .slideshow-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #left-button-container, #right-button-container {
-  width: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .selection-button {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #right-button-container {
   order: 3;
-}
-
-.review-text {
-  margin: 10px 10px;
 }
 
 .image-container {
@@ -118,6 +117,10 @@ body {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 75%;
 }
 
 /*# sourceMappingURL=input.css.map */
