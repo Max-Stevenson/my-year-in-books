@@ -3,72 +3,96 @@
     "month": "January",
     "image": "/images/sapiens.jpg",
     "altText": "Sapiens: A Brief History of Humankind, book by Yuval Noah Harari",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "February",
     "image": "/images/1984.jpg",
     "altText": "Nineteen Eighty-Four, novel by George Orwell",
+    "title": "1984",
+    "author": "George Orwell",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "March",
-    "image": "/images/chernobyl.jpg",
-    "altText": "Chernobyl: The History of a Nuclear Catastrophe, book by Serhii Plokhii",
+    "image": "/images/roadToSerfdom.jpg",
+    "altText": "The Road to Serfdom, book by Friedrich Hayek",
+    "title": "The Road to Serfdom",
+    "author": "Friedrich Hayek",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "April",
-    "image": "/images/deus.jpg",
-    "altText": "Homo Deus, book by Yuval Noah Harari",
+    "image": "/images/we.jpg",
+    "altText": "We, novel by Yevgeny Zamyatin",
+    "title": "We",
+    "author": "Yevgeny Zamyatin",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "May",
-    "image": "/images/f451.jpg",
-    "altText": "Fahrenheit 451, novel by Ray Bradbury",
+    "image": "/images/onLiberty.jpg",
+    "altText": "On Liberty, book by John Stuart Mill",
+    "title": "On Liberty",
+    "author": "John Stuart Mill",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "June",
-    "image": "/images/barister.jpg",
-    "altText": "The Secret Barrister: Stories of the Law and How It's Broken, book by The Secret Barrister",
+    "image": "/images/chernobyl.jpg",
+    "altText": "Chernobyl: The History of a Nuclear Catastrophe, book by Serhii Plokhii",
+    "title": "Chernobyl: The History of a Nuclear Catastrophe",
+    "author": "Serhii Plokhii",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "July",
-    "image": "/images/rats.jpg",
-    "altText": "The Rats, a novel by James Herbert",
+    "image": "/images/robot.jpg",
+    "altText": "The Complete Robot, collection by Issac Assimov",
+    "title": "The Complete Robot",
+    "author": "Issac Assimov",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "August",
-    "image": "/images/robot.jpg",
-    "altText": "The Complete Robot, collection by Issac Assimov",
+    "image": "/images/f451.jpg",
+    "altText": "Fahrenheit 451, novel by Ray Bradbury",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "September",
-    "image": "/images/1984.jpg",
-    "altText": "Nineteen Eighty-Four, novel by George Orwell",
+    "image": "/images/deus.jpg",
+    "altText": "Homo Deus, book by Yuval Noah Harari",
+    "title": "Homo Deus: A Brief History of Tomorrow",
+    "author": "Yuval Noah Harari",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "October",
-    "image": "/images/1984.jpg",
-    "altText": "Nineteen Eighty-Four, novel by George Orwell",
+    "image": "/images/barister.jpg",
+    "altText": "The Secret Barrister: Stories of the Law and How It's Broken, book by The Secret Barrister",
+    "title": "The Secret Barrister: Stories of the Law and How It's Broken",
+    "author": "The Secret Barrister",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "November",
-    "image": "/images/1984.jpg",
-    "altText": "Nineteen Eighty-Four, novel by George Orwell",
+    "image": "/images/rats.jpg",
+    "altText": "The Rats, a novel by James Herbert",
+    "title": "The Rats",
+    "author": "James Herbert",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
     "month": "December",
-    "image": "/images/1984.jpg",
-    "altText": "Nineteen Eighty-Four, novel by George Orwell",
+    "image": "/images/grapesOfWrath.jpg",
+    "altText": "The Grapes of Wrath, novel by John Steinbeck",
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   }
 ]
