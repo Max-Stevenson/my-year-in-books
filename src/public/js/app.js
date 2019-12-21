@@ -89,3 +89,9 @@ $aboutLink.click((event) => {
 $('#sidebar-mobile-control').on('click', () => {
   $('.sidebar').css('display', 'block');
 });
+
+$('#sidebar-mobile-collapse').on('click', () => {
+  console.log('t');
+  
+  $('.sidebar').css('display', 'none');
+});

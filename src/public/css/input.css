@@ -131,13 +131,15 @@ i {
   .sidebar {
     display: none;
     height: 100%;
-    width: 250px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
+    bottom: 0;
     overflow-x: hidden;
-    padding-top: 60px;
+    overflow-y: scroll;
+    padding-top: 20px;
   }
 
   .header {
@@ -152,6 +154,10 @@ i {
     position: absolute;
     left: 20px;
     top: 20px;
+  }
+
+  .sidebar i {
+    display: inline !important;
   }
 
   .header h1 {
