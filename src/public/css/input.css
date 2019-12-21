@@ -164,8 +164,8 @@ i {
     display: inline;
   }
 
-  .left-button-container {
-    display: none !important;
+  #left-button-container, #right-button-container {
+    display: none;
   }
 }
 

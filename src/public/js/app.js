@@ -21,6 +21,11 @@ $(document).ready(function () {
         };
       };
 
+      $(window).on('swipeleft', () => {
+        console.log('s');
+        changeContent(data, templates, 1);
+      });
+
       $(document).on('click', '#right-button', () => {
         changeContent(data, templates, 1);
       });
@@ -90,8 +95,6 @@ $('#sidebar-mobile-control').on('click', () => {
   $('.sidebar').css('display', 'block');
 });
 
-$('#sidebar-mobile-collapse').on('click', () => {
-  console.log('t');
-  
+$('#sidebar-mobile-collapse').on('click', () => {  
   $('.sidebar').css('display', 'none');
 });
