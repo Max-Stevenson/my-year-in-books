@@ -21,7 +21,7 @@ $(document).ready(function () {
         };
       };
 
-      $(window).on('swipeleft', () => {
+      window.addEventListener('swiped-left', () => {
         console.log('s');
         changeContent(data, templates, 1);
       });
