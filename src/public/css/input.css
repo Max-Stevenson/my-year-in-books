@@ -142,6 +142,16 @@ i {
     padding-top: 20px;
   }
 
+  .image-wrapper {
+    background: lightblue;
+    text-align: center;
+    border: 1px solid #2A3439;
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 0 0 131%;
+    position: relative;
+  }
+
   .header {
     position: relative;
     text-align: center;
@@ -152,8 +162,8 @@ i {
     display: inline !important;
     text-align: left;
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 2%;
+    top: 40%;
   }
 
   .sidebar i {

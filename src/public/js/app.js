@@ -22,8 +22,11 @@ $(document).ready(function () {
       };
 
       window.addEventListener('swiped-left', () => {
-        console.log('s');
         changeContent(data, templates, 1);
+      });
+
+      window.addEventListener('swiped-right', () => {
+        changeContent(data, templates, -1);
       });
 
       $(document).on('click', '#right-button', () => {
