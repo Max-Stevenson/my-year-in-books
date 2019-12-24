@@ -9,6 +9,9 @@ $(document).ready(function () {
       };
 
       window.onhashchange = () => {
+        if ($(window).width() <= 600) {          
+          $('.sidebar').toggleClass('sidebar-active');
+        };
         let month = location.hash.substring(2);
         let targetIndex = getCurrentIndex(data, month);
         renderReview(data, templates, targetIndex);
@@ -95,9 +98,9 @@ $aboutLink.click((event) => {
 });
 
 $('#sidebar-mobile-control').on('click', () => {
-  $('.sidebar').css('display', 'block');
+  $('.sidebar').toggleClass('sidebar-active');
 });
 
 $('#sidebar-mobile-collapse').on('click', () => {  
-  $('.sidebar').css('display', 'none');
+  $('.sidebar').toggleClass('sidebar-active');
 });
