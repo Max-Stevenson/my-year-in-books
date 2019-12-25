@@ -142,7 +142,7 @@ i {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-top: 20px;
+    padding-top: 10px;
     transition: width 0.7s
   }
 
@@ -157,7 +157,7 @@ i {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-top: 20px;
+    padding-top: 10px;
     transition: width 0.7s
   }
 
@@ -201,6 +201,7 @@ i {
     border-radius: 50%;
     width: 100px;
     padding: 10px;
+    float: none;
   }
 
   .profile-pic-container {
@@ -208,8 +209,16 @@ i {
     border-bottom: 1px solid $gunmetalGray;
     border-top: 1px solid $gunmetalGray;
     color: #818896;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
+  }
+
+  .profile-name {
+    margin: 10px
+  }
+
+  .profile-title {
+    margin: 10px
   }
   
 }
