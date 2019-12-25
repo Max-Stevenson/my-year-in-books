@@ -193,6 +193,21 @@ i {
   #left-button-container, #right-button-container {
     display: none;
   }
+
+  .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+  }
+
+  .profile-pic-container {
+    flex: 50%;
+    border-bottom: 1px solid #2A3439;
+    border-top: 1px solid #2A3439;
+    color: #818896;
+    padding: 20px 0;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=input.css.map */

@@ -197,5 +197,19 @@ i {
     display: none;
   }
 
+  .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+  }
+
+  .profile-pic-container {
+    flex: 50%;
+    border-bottom: 1px solid $gunmetalGray;
+    border-top: 1px solid $gunmetalGray;
+    color: #818896;
+    padding: 20px 0;
+    text-align: center;
+  }
   
 }
