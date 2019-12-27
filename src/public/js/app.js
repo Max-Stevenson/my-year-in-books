@@ -9,7 +9,7 @@ $(document).ready(function () {
       };
 
       window.onhashchange = () => {
-        if ($(window).width() <= 600) {          
+        if ($(window).width() <= 600) {
           $('.sidebar').toggleClass('sidebar-active');
         };
         let month = location.hash.substring(2);
@@ -86,21 +86,30 @@ const getCurrentIndex = (data, month) => {
   return index < 0 ? index = 0 : index;
 };
 
+// $aboutLink = $('#about-link');
+// $aboutLink.click((event) => {
+//   event.preventDefault();
+
+//   const $slideshowContainer = $('.slideshow-container');
+//   $slideshowContainer.toggleClass('hidden');
+
+//   const $aboutContent = $('#about-content');
+//   $aboutContent.toggleClass('active');
+// });
+
 $aboutLink = $('#about-link');
 $aboutLink.click((event) => {
   event.preventDefault();
-
-  const $slideshowContainer = $('.slideshow-container');
-  $slideshowContainer.toggleClass('hidden');
-
-  const $aboutContent = $('#about-content');
-  $aboutContent.toggleClass('active');
+  $.get('/templates/about.htm', (templates) => {
+    let template = $(templates).filter('#tpl-about').html();
+    $('#target').html(Mustache.render(template, null));
+  });
 });
 
 $('#sidebar-mobile-control').on('click', () => {
   $('.sidebar').toggleClass('sidebar-active');
 });
 
-$('#sidebar-mobile-collapse').on('click', () => {  
+$('#sidebar-mobile-collapse').on('click', () => {
   $('.sidebar').toggleClass('sidebar-active');
 });
