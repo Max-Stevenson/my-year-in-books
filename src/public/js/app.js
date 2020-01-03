@@ -94,7 +94,7 @@ const getCurrentIndex = (data, month) => {
 
 const renderAbout = () => {
   $.get('/templates/about.htm', (templates) => {
-    let template = $(templates).filter('#tpl-about').html();
+    let template = $(templates).filter('#tpl-aboutPage').html();
     $('#target').html(Mustache.render(template, null));
   });
 };

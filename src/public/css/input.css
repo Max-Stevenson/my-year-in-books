@@ -140,7 +140,7 @@ i {
     overflow-x: hidden;
     overflow-y: scroll;
     padding-top: 10px;
-    transition: width 0.7s;
+    transition: width 0.5s;
   }
 
   .sidebar-active {
@@ -155,7 +155,7 @@ i {
     overflow-x: hidden;
     overflow-y: scroll;
     padding-top: 10px;
-    transition: width 0.7s;
+    transition: width 0.5s;
   }
 
   .image-wrapper {
