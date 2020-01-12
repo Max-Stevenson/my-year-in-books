@@ -43,6 +43,7 @@ body {
 
 .profile-body {
   flex: 50%;
+  white-space: nowrap;
 }
 
 .profile-pic {
@@ -128,6 +129,10 @@ i {
 }
 
 @media only screen and (max-width: 600px) {
+  .nav-link {
+    text-decoration: none;
+  }
+
   .sidebar {
     display: block;
     height: 100%;
@@ -140,7 +145,7 @@ i {
     overflow-x: hidden;
     overflow-y: scroll;
     padding-top: 10px;
-    transition: width 0.5s;
+    transition: width 0.3s;
   }
 
   .sidebar-active {
@@ -155,7 +160,7 @@ i {
     overflow-x: hidden;
     overflow-y: scroll;
     padding-top: 10px;
-    transition: width 0.5s;
+    transition: width 0.3s;
   }
 
   .image-wrapper {
