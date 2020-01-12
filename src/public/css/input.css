@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
@@ -124,10 +128,6 @@ body {
   max-width: 75%;
 }
 
-i {
-  display: none !important;
-}
-
 @media only screen and (max-width: 600px) {
   .nav-link {
     text-decoration: none;
@@ -144,7 +144,6 @@ i {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-top: 10px;
     transition: width 0.3s;
   }
 
@@ -159,7 +158,6 @@ i {
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding-top: 10px;
     transition: width 0.3s;
   }
 
@@ -174,21 +172,10 @@ i {
   }
 
   .header {
-    position: relative;
-    text-align: center;
-    padding: 5px;
-  }
-
-  .header i {
-    display: inline !important;
-    text-align: left;
-    position: absolute;
-    left: 3%;
-    top: 40%;
-  }
-
-  .sidebar i {
-    display: inline !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
   }
 
   .header h1 {
@@ -221,6 +208,16 @@ i {
 
   .profile-title {
     margin: 10px;
+  }
+
+  .sidebar__header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-window-close {
+    padding-left: 10px;
   }
 }
 
