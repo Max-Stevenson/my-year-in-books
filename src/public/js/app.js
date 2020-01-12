@@ -10,7 +10,9 @@ $(document).ready(function () {
 
       window.onhashchange = () => {
         if ($(window).width() <= 600) {
-          $('.sidebar').toggleClass('sidebar-active');
+          if ($('.sidebar').hasClass('sidebar-active')) {
+            $('.sidebar').toggleClass('sidebar-active');
+          };
         };
 
         let hash = location.hash.substring(2);
