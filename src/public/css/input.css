@@ -128,9 +128,17 @@ body {
   max-width: 75%;
 }
 
+#sidebar-mobile-control {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-link {
     text-decoration: none;
+  }
+
+  #sidebar-mobile-control {
+    display: block;
   }
 
   .sidebar {
