@@ -67,8 +67,9 @@ $(document).ready(function () {
 });
 
 const renderReview = (data, templates, index = 0) => {
-  let template = $(templates).filter('#tpl-review').html();
-  $('#target').html(Mustache.render(template, data[index]));
+  let source = $(templates).filter('#tpl-review').html();
+  let template = Handlebars.compile(source);
+  $('#target').html(template(data[index]));
 };
 
 const changeContent = (data, templates, index) => {
