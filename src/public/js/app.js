@@ -66,6 +66,14 @@ $(document).ready(function () {
   });
 });
 
+Handlebars.registerHelper('renderStars', (rating) => {
+  console.log('helper');  
+  for (let i = 0; i <= rating; i++) {
+    console.log('t');
+    return new Handlebars.SafeString("<span class='fa fa-star checked'></span>");
+  };
+});
+
 const renderReview = (data, templates, index = 0) => {
   let source = $(templates).filter('#tpl-review').html();
   let template = Handlebars.compile(source);
