@@ -66,12 +66,13 @@ $(document).ready(function () {
   });
 });
 
-Handlebars.registerHelper('renderStars', (rating) => {
-  console.log('helper');  
-  for (let i = 0; i <= rating; i++) {
-    console.log('t');
-    return new Handlebars.SafeString("<span class='fa fa-star checked'></span>");
+Handlebars.registerHelper('renderStars', (rating, options) => {
+  let result = '';
+  for (let i = 1; i <= 5; i++) {
+    let checked = rating >= i ? ' checked' : '';
+    result += `<span class='fa fa-star${checked}'></span>`;
   };
+  return new Handlebars.SafeString(result);
 });
 
 const renderReview = (data, templates, index = 0) => {

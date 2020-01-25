@@ -5,7 +5,7 @@
     "altText": "Sapiens: A Brief History of Humankind, book by Yuval Noah Harari",
     "title": "Sapiens: A Brief History of Humankind",
     "author": "Yuval Noah Harari",
-    "rating": 5,
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -14,6 +14,7 @@
     "altText": "Nineteen Eighty-Four, novel by George Orwell",
     "title": "1984",
     "author": "George Orwell",
+    "rating": 5,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -22,6 +23,7 @@
     "altText": "The Road to Serfdom, book by Friedrich Hayek",
     "title": "The Road to Serfdom",
     "author": "Friedrich Hayek",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -30,6 +32,7 @@
     "altText": "We, novel by Yevgeny Zamyatin",
     "title": "We",
     "author": "Yevgeny Zamyatin",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -38,6 +41,7 @@
     "altText": "On Liberty, book by John Stuart Mill",
     "title": "On Liberty",
     "author": "John Stuart Mill",
+    "rating": 3,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -46,6 +50,7 @@
     "altText": "Chernobyl: The History of a Nuclear Catastrophe, book by Serhii Plokhii",
     "title": "Chernobyl: The History of a Nuclear Catastrophe",
     "author": "Serhii Plokhii",
+    "rating": 5,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -54,6 +59,7 @@
     "altText": "The Complete Robot, collection by Issac Assimov",
     "title": "The Complete Robot",
     "author": "Issac Assimov",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -62,6 +68,7 @@
     "altText": "Fahrenheit 451, novel by Ray Bradbury",
     "title": "Fahrenheit 451",
     "author": "Ray Bradbury",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -70,6 +77,7 @@
     "altText": "Homo Deus, book by Yuval Noah Harari",
     "title": "Homo Deus: A Brief History of Tomorrow",
     "author": "Yuval Noah Harari",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -78,6 +86,7 @@
     "altText": "The Secret Barrister: Stories of the Law and How It's Broken, book by The Secret Barrister",
     "title": "The Secret Barrister: Stories of the Law and How It's Broken",
     "author": "The Secret Barrister",
+    "rating": 5,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -86,6 +95,7 @@
     "altText": "The Rats, a novel by James Herbert",
     "title": "The Rats",
     "author": "James Herbert",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
@@ -94,6 +104,7 @@
     "altText": "The Grapes of Wrath, novel by John Steinbeck",
     "title": "The Grapes of Wrath",
     "author": "John Steinbeck",
+    "rating": 4,
     "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum."
   }
 ]
