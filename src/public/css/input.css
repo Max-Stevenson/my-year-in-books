@@ -1,3 +1,16 @@
+.nav-item {
+  text-decoration: none;
+  padding: 10px 0 10px 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+.nav-link :hover {
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -142,10 +155,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .nav-link {
-    text-decoration: none;
-  }
-
   #sidebar-mobile-control {
     display: block;
   }

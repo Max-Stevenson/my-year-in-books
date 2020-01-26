@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./navbar";
 
 $imagePadding: 130%;
 
@@ -9,7 +10,7 @@ $imagePadding: 130%;
 .list-container {
   list-style-type: none;
   padding-left: 10px;
-  
+
 }
 
 .checked {
@@ -147,9 +148,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .nav-link {
-    text-decoration: none;
-  }
+  // .nav-link {
+  //   text-decoration: none;
+  // }
 
   #sidebar-mobile-control {
     display: block;
