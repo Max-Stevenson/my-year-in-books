@@ -6,7 +6,11 @@
 .nav-link {
   text-decoration: none;
   color: black;
+  display: block;
+  height: 100%;
+  width: 100%;
   :hover {
     cursor: pointer;
+    background-color: #555;
   }
 }
