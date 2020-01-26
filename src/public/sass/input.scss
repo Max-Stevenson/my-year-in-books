@@ -6,6 +6,12 @@ $imagePadding: 130%;
   box-sizing: border-box;
 }
 
+.list-container {
+  list-style-type: none;
+  padding-left: 10px;
+  
+}
+
 .checked {
   color: yellow;
 }
