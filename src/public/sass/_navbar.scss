@@ -3,6 +3,10 @@
   padding: 10px 0 10px 10px;
 }
 
+#sidebar-mobile-control {
+  display: none;
+}
+
 .nav-link {
   text-decoration: none;
   color: black;
@@ -12,5 +16,73 @@
   :hover {
     cursor: pointer;
     background-color:#ce0606 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #sidebar-mobile-control {
+    display: block;
+  }
+
+  .sidebar {
+    display: block;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: width 0.3s
+  }
+
+  .sidebar-active {
+    display: block;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: width 0.3s
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+    float: none;
+  }
+
+  .profile-pic-container {
+    flex: 50%;
+    border-bottom: 1px solid $gunmetalGray;
+    border-top: 1px solid $gunmetalGray;
+    color: #818896;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .profile-name {
+    margin: 10px
+  }
+
+  .profile-title {
+    margin: 10px
+  }
+
+  .sidebar__header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-window-close {
+    padding-left: 10px
   }
 }
