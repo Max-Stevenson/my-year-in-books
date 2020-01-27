@@ -1,7 +1,6 @@
 @import "./colors";
+@import "./sizings";
 @import "./navbar";
-
-$imagePadding: 130%;
 
 * {
   box-sizing: border-box;
@@ -14,7 +13,7 @@ $imagePadding: 130%;
 }
 
 .checked {
-  color: yellow;
+  color: $metalicGold;
 }
 
 body {
@@ -148,10 +147,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  // .nav-link {
-  //   text-decoration: none;
-  // }
-
   #sidebar-mobile-control {
     display: block;
   }

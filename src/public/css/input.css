@@ -12,7 +12,7 @@
 }
 .nav-link :hover {
   cursor: pointer;
-  background-color: #555;
+  background-color: #ce0606 !important;
 }
 
 * {
@@ -25,7 +25,7 @@
 }
 
 .checked {
-  color: yellow;
+  color: #d4af37;
 }
 
 body {
