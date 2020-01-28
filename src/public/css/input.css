@@ -7,6 +7,10 @@
   display: none;
 }
 
+#sidebar-mobile-collapse {
+  display: none;
+}
+
 .nav-link {
   text-decoration: none;
   color: black;
@@ -35,6 +39,7 @@
   border-top: 1px solid #2A3439;
   color: #818896;
   padding: 20px 0;
+  text-align: center;
 }
 
 .profile-body {
@@ -46,7 +51,6 @@
   border-radius: 50%;
   width: 100px;
   padding: 10px;
-  float: left;
 }
 
 .profile-name {
@@ -103,7 +107,6 @@
     border-radius: 50%;
     width: 100px;
     padding: 10px;
-    float: none;
   }
 
   .profile-pic-container {
