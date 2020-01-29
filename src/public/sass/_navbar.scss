@@ -24,7 +24,7 @@
 }
 
 .sidebar {
-  flex: 20%;
+  flex: 15%;
   background: #dadbda;
   top: 0;
 }
@@ -75,6 +75,10 @@
     display: block;
   }
 
+  #sidebar-mobile-collapse {
+    display: block;
+  }
+
   .sidebar {
     display: block;
     height: 100%;
@@ -92,7 +96,7 @@
   .sidebar-active {
     display: block;
     height: 100%;
-    width: 200px;
+    width: 185px;
     position: fixed;
     z-index: 1;
     top: 0;

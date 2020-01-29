@@ -69,8 +69,8 @@ body {
   text-align: center;
   border: 1px solid $gunmetalGray;
   margin: 0 auto;
-  max-width: 700px;
-  min-height: 1024px;
+  max-width: 600px;
+  min-height: 824px;
 }
 
 .image-container img {
@@ -79,11 +79,17 @@ body {
 }
 
 .wrapper {
-  max-width: 75%;
+  max-width: 85%;
+  background: lightgreen;
 }
 
 @media only screen and (max-width: 600px) {
   #left-button-container, #right-button-container {
     display: none;
+  }
+
+  .image-wrapper {
+    min-height: 356px;
+    max-width: 275px;
   }
 }

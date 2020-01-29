@@ -24,7 +24,7 @@
 }
 
 .sidebar {
-  flex: 20%;
+  flex: 15%;
   background: #dadbda;
   top: 0;
 }
@@ -75,6 +75,10 @@
     display: block;
   }
 
+  #sidebar-mobile-collapse {
+    display: block;
+  }
+
   .sidebar {
     display: block;
     height: 100%;
@@ -92,7 +96,7 @@
   .sidebar-active {
     display: block;
     height: 100%;
-    width: 200px;
+    width: 185px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -233,8 +237,8 @@ body {
   text-align: center;
   border: 1px solid #2A3439;
   margin: 0 auto;
-  max-width: 700px;
-  min-height: 1024px;
+  max-width: 600px;
+  min-height: 824px;
 }
 
 .image-container img {
@@ -243,12 +247,18 @@ body {
 }
 
 .wrapper {
-  max-width: 75%;
+  max-width: 85%;
+  background: lightgreen;
 }
 
 @media only screen and (max-width: 600px) {
   #left-button-container, #right-button-container {
     display: none;
+  }
+
+  .image-wrapper {
+    min-height: 356px;
+    max-width: 275px;
   }
 }
 
