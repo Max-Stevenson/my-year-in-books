@@ -1,6 +1,18 @@
+.list-container {
+  list-style-type: none;
+  padding: 0;
+}
+
 .nav-item {
   text-decoration: none;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 0;
+  :hover {
+    cursor: pointer;
+    background-color:#ce0606;
+  }
+  a {
+    padding-left: 20px;
+  }
 }
 
 #sidebar-mobile-control {
@@ -17,10 +29,6 @@
   display: block;
   height: 100%;
   width: 100%;
-  :hover {
-    cursor: pointer;
-    background-color:#ce0606 !important;
-  }
 }
 
 .sidebar {
