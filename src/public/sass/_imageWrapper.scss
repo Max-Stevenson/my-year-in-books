@@ -1,12 +1,8 @@
 @media only screen and (max-width: 600px) {
   .image-wrapper {
     background: lightblue;
-    text-align: center;
     border: 1px solid $gunmetalGray;
     margin: 0 auto;
-    max-width: 760px;
-    padding: 0 0 131%;
-    position: relative;
   }
 
   #left-button-container, #right-button-container {
