@@ -1,3 +1,23 @@
+.image-container {
+  max-width: 494px;
+  max-height: 800px;
+  margin: 0 auto;
+}
+
+.image-wrapper {
+  position: relative;
+  height: 0;
+  padding-top: ((800/494) * 100%);
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .image-wrapper {
     background: lightblue;
