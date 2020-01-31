@@ -13,23 +13,25 @@
           <img class="book-image" src="{{image}}" alt={{altText}}>
       </div>
     </div>
-    <div class="book-details">
-      <h2>{{title}}</h2>
-      <h3>{{author}}</h3>
-      <div class="rating-container">
-        {{#renderStars rating}}
-        <span class="fa fa-star" id="star-1"></span>
-        <span class="fa fa-star" id="star-2"></span>
-        <span class="fa fa-star" id="star-3"></span>
-        <span class="fa fa-star" id="star-4"></span>
-        <span class="fa fa-star" id="star-5"></span>
-        {{/renderStars}}
+    <div class="book-container">
+      <div class="book-details">
+        <h2>{{title}}</h2>
+        <h3>{{author}}</h3>
+        <div class="rating-container">
+          {{#renderStars rating}}
+          <span class="fa fa-star" id="star-1"></span>
+          <span class="fa fa-star" id="star-2"></span>
+          <span class="fa fa-star" id="star-3"></span>
+          <span class="fa fa-star" id="star-4"></span>
+          <span class="fa fa-star" id="star-5"></span>
+          {{/renderStars}}
+        </div>
       </div>
-    </div>
-    <div class="review-container">
-      <p class="review-text">
-        {{review}}
-      </p>
+      <div class="review-container">
+        <p class="review-text">
+          {{review}}
+        </p>
+      </div>
     </div>
   </div>
 </script>
