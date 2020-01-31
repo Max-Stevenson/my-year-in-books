@@ -19,11 +19,11 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
+  background: #6D7993;
 }
 
 .flex-container {
   display: flex;
-  background: pink;
 }
 
 #target {
@@ -54,7 +54,6 @@ body {
 
 .wrapper {
   max-width: 85%;
-  background: lightgreen;
 }
 
 @media only screen and (max-width: 600px) {
@@ -64,7 +63,6 @@ body {
 
   .wrapper {
     max-width: 100%;
-    background: lightgreen;
   }
 
   .fas.fa-book.fa-2x {

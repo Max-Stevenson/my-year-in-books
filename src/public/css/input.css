@@ -5,11 +5,11 @@
 
 .nav-item {
   text-decoration: none;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
 }
 .nav-item :hover {
   cursor: pointer;
-  background-color: #ce0606;
+  background-color: #898989;
 }
 .nav-item a {
   padding-left: 20px;
@@ -33,7 +33,7 @@
 
 .sidebar {
   flex: 15%;
-  background: #dadbda;
+  background: #d5d5d5;
   overflow-y: scroll;
 }
 
@@ -44,7 +44,6 @@
 .profile-pic-container {
   flex: 50%;
   border-bottom: 1px solid #2A3439;
-  color: #818896;
   padding: 20px 0;
   text-align: center;
 }
@@ -148,7 +147,7 @@
   }
 }
 .header {
-  background: #f1f1f1;
+  background: #9099a2;
   padding: 20px;
 }
 
@@ -171,7 +170,7 @@
     padding: 0;
   }
 
-  #book {
+  span #book-icon {
     display: none;
   }
 }
@@ -193,6 +192,8 @@
   left: 0;
   max-width: 100%;
   height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -215,11 +216,11 @@
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
+  background: #6D7993;
 }
 
 .flex-container {
   display: flex;
-  background: pink;
 }
 
 #target {
@@ -250,7 +251,6 @@ body {
 
 .wrapper {
   max-width: 85%;
-  background: lightgreen;
 }
 
 @media only screen and (max-width: 600px) {
@@ -260,7 +260,6 @@ body {
 
   .wrapper {
     max-width: 100%;
-    background: lightgreen;
   }
 
   .fas.fa-book.fa-2x {

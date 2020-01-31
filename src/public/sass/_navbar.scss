@@ -5,10 +5,10 @@
 
 .nav-item {
   text-decoration: none;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 0 0;
   :hover {
     cursor: pointer;
-    background-color: #ce0606;
+    background-color: darken($color: #d5d5d5, $amount: 30%);
   }
   a {
     padding-left: 20px;
@@ -33,7 +33,7 @@
 
 .sidebar {
   flex: 15%;
-  background: #dadbda;
+  background: #d5d5d5;
   overflow-y: scroll;
 }
 
@@ -44,7 +44,6 @@
 .profile-pic-container {
   flex: 50%;
   border-bottom: 1px solid $gunmetalGray;
-  color: #818896;
   padding: 20px 0;
   text-align: center;
 }
