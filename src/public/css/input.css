@@ -34,7 +34,7 @@
 .sidebar {
   flex: 15%;
   background: #dadbda;
-  top: 0;
+  overflow-y: scroll;
 }
 
 .profile-info-container {
@@ -44,7 +44,6 @@
 .profile-pic-container {
   flex: 50%;
   border-bottom: 1px solid #2A3439;
-  border-top: 1px solid #2A3439;
   color: #818896;
   padding: 20px 0;
   text-align: center;
@@ -154,19 +153,26 @@
 }
 
 .header h1 {
-  margin: 0 auto;
+  display: inline;
+  padding-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 50px;
+    padding: 0;
   }
 
   .header h1 {
     display: inline;
+    padding: 0;
+  }
+
+  #book {
+    display: none;
   }
 }
 .image-container {
@@ -200,6 +206,10 @@
 
 .checked {
   color: #d4af37;
+}
+
+.month-heading {
+  text-align: center;
 }
 
 body {
@@ -245,6 +255,15 @@ body {
 
 @media only screen and (max-width: 600px) {
   #left-button-container, #right-button-container {
+    display: none;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    background: lightgreen;
+  }
+
+  .fas.fa-book.fa-2x {
     display: none;
   }
 }

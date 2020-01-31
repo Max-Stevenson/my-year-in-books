@@ -8,7 +8,7 @@
   padding: 10px 0 10px 0;
   :hover {
     cursor: pointer;
-    background-color:#ce0606;
+    background-color: #ce0606;
   }
   a {
     padding-left: 20px;
@@ -34,7 +34,7 @@
 .sidebar {
   flex: 15%;
   background: #dadbda;
-  top: 0;
+  overflow-y: scroll;
 }
 
 .profile-info-container {
@@ -44,7 +44,6 @@
 .profile-pic-container {
   flex: 50%;
   border-bottom: 1px solid $gunmetalGray;
-  border-top: 1px solid $gunmetalGray;
   color: #818896;
   padding: 20px 0;
   text-align: center;
@@ -98,7 +97,7 @@
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    transition: width 0.3s
+    transition: width 0.3s;
   }
 
   .sidebar-active {
@@ -112,7 +111,7 @@
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    transition: width 0.3s
+    transition: width 0.3s;
   }
 
   .profile-pic {
@@ -131,11 +130,11 @@
   }
 
   .profile-name {
-    margin: 10px
+    margin: 10px;
   }
 
   .profile-title {
-    margin: 10px
+    margin: 10px;
   }
 
   .sidebar__header {
@@ -145,6 +144,6 @@
   }
 
   .fa-window-close {
-    padding-left: 10px
+    padding-left: 10px;
   }
 }
