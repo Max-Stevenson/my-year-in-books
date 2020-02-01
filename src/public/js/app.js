@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $.getJSON('/src/public/reviews/reviews.json', (data) => {
-    $.get('/src/public/templates/review.htm', (templates) => {
+  $.getJSON('./src/public/reviews/reviews.json', (data) => {
+    $.get('./src/public/templates/review.htm', (templates) => {
 
       window.onload = () => {
         let month = location.hash.substring(2);
