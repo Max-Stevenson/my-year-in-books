@@ -106,7 +106,7 @@ const getCurrentIndex = (data, month) => {
 };
 
 const renderAbout = () => {
-  $.get('/templates/about.htm', (templates) => {
+  $.get('./src/public/templates/about.htm', (templates) => {
     let source = $(templates).filter('#tpl-aboutPage').html();
     let template = Handlebars.compile(source);
     $('#target').html(template(null));
