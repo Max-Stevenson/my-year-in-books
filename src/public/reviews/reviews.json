@@ -1,7 +1,7 @@
 [
   {
     "month": "January",
-    "image": "/images/sapiens.jpg",
+    "image": "/src/public/images/sapiens.jpg",
     "altText": "Sapiens: A Brief History of Humankind, book by Yuval Noah Harari",
     "title": "Sapiens: A Brief History of Humankind",
     "author": "Yuval Noah Harari",
@@ -10,7 +10,7 @@
   },
   {
     "month": "February",
-    "image": "/images/1984.jpg",
+    "image": "/src/public/images/1984.jpg",
     "altText": "Nineteen Eighty-Four, novel by George Orwell",
     "title": "1984",
     "author": "George Orwell",
@@ -19,7 +19,7 @@
   },
   {
     "month": "March",
-    "image": "/images/roadToSerfdom.jpg",
+    "image": "/src/public/images/roadToSerfdom.jpg",
     "altText": "The Road to Serfdom, book by Friedrich Hayek",
     "title": "The Road to Serfdom",
     "author": "Friedrich Hayek",
@@ -28,7 +28,7 @@
   },
   {
     "month": "April",
-    "image": "/images/we.jpg",
+    "image": "/src/public/images/we.jpg",
     "altText": "We, novel by Yevgeny Zamyatin",
     "title": "We",
     "author": "Yevgeny Zamyatin",
@@ -37,7 +37,7 @@
   },
   {
     "month": "May",
-    "image": "/images/onLiberty.jpg",
+    "image": "/src/public/images/onLiberty.jpg",
     "altText": "On Liberty, book by John Stuart Mill",
     "title": "On Liberty",
     "author": "John Stuart Mill",
@@ -46,7 +46,7 @@
   },
   {
     "month": "June",
-    "image": "/images/chernobyl.jpg",
+    "image": "/src/public/images/chernobyl.jpg",
     "altText": "Chernobyl: The History of a Nuclear Catastrophe, book by Serhii Plokhii",
     "title": "Chernobyl: The History of a Nuclear Catastrophe",
     "author": "Serhii Plokhii",
@@ -55,7 +55,7 @@
   },
   {
     "month": "July",
-    "image": "/images/robot.jpg",
+    "image": "/src/public/images/robot.jpg",
     "altText": "The Complete Robot, collection by Issac Assimov",
     "title": "The Complete Robot",
     "author": "Issac Assimov",
@@ -64,7 +64,7 @@
   },
   {
     "month": "August",
-    "image": "/images/f451.jpg",
+    "image": "/src/public/images/f451.jpg",
     "altText": "Fahrenheit 451, novel by Ray Bradbury",
     "title": "Fahrenheit 451",
     "author": "Ray Bradbury",
@@ -73,7 +73,7 @@
   },
   {
     "month": "September",
-    "image": "/images/deus.jpg",
+    "image": "/src/public/images/deus.jpg",
     "altText": "Homo Deus, book by Yuval Noah Harari",
     "title": "Homo Deus: A Brief History of Tomorrow",
     "author": "Yuval Noah Harari",
@@ -82,7 +82,7 @@
   },
   {
     "month": "October",
-    "image": "/images/barister.jpg",
+    "image": "/src/public/images/barister.jpg",
     "altText": "The Secret Barrister: Stories of the Law and How It's Broken, book by The Secret Barrister",
     "title": "The Secret Barrister: Stories of the Law and How It's Broken",
     "author": "The Secret Barrister",
@@ -91,7 +91,7 @@
   },
   {
     "month": "November",
-    "image": "/images/rats.jpg",
+    "image": "/src/public/images/rats.jpg",
     "altText": "The Rats, a novel by James Herbert",
     "title": "The Rats",
     "author": "James Herbert",
@@ -100,7 +100,7 @@
   },
   {
     "month": "December",
-    "image": "/images/grapesOfWrath.jpg",
+    "image": "/src/public/images/grapesOfWrath.jpg",
     "altText": "The Grapes of Wrath, novel by John Steinbeck",
     "title": "The Grapes of Wrath",
     "author": "John Steinbeck",
