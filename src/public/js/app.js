@@ -62,6 +62,7 @@ $(document).ready(function () {
         }
         e.preventDefault();
       });
+      $('#date').html(new Date().getFullYear());
     });
   });
 });
