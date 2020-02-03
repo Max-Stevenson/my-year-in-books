@@ -95,7 +95,7 @@ const changeContent = (data, templates, index) => {
 
   renderReview(data, templates, newIndex);
   month = $('.month-heading').text().toLowerCase();
-  history.pushState(month, null, `/#/${month}`);
+  history.pushState(month, null, `./#/${month}`);
 };
 
 const getCurrentIndex = (data, month) => {
